@@ -41,6 +41,7 @@ function verify(req, res, next){
 
 
 
+
 async function run(){
 
   try{
@@ -58,8 +59,6 @@ async function run(){
       const token = jwt.sign(user, process.env.ACCESS_TOKEN, {expiresIn: '1h'})
       res.send({token})
   })
-
-
 
 
 
