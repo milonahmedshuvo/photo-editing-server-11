@@ -96,7 +96,7 @@ async function run(){
          res.send(result)
     })
 
-    
+
     app.post('/review', async (req, res)=>{
        const data=req.body;
        const result= await reviewCollection.insertOne(data)
@@ -119,8 +119,6 @@ async function run(){
 
 
     app.get('/myreview',verify, async(req, res)=>{
-
-
 
       const decoded = req.decoded
       console.log(decoded)
