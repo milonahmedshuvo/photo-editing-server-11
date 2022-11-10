@@ -69,8 +69,6 @@ async function run(){
 
 
 
-
-
     app.get('/service', async (req, res)=>{
       const query={}
       const cursor=serviceCollection.find(query)
