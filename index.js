@@ -127,7 +127,6 @@ async function run(){
           return res.status(402).send({message: 'unauthorize access'})
      }
 
-
       let query={}
       if(req.query.email){
         query={
